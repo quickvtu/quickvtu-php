@@ -3,6 +3,7 @@
 /* IMPORTANT WARNING! - Transaction Reference Must the 9 digit number associated with the airtime purchase */
 /* IMPORTANT WARNING! - All responses are in JSON format. */
 // This file shows how you can purchase airtime via the api using CURL
+
   $service_url = 'http://quickvtu.com/api/v1/status';
        $curl = curl_init($service_url);
        $curl_post_data = array
