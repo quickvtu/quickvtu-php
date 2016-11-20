@@ -1,6 +1,5 @@
 <? 
 /* IMPORTANT WARNING! - Do not reveal your API key. */
-/* IMPORTANT WARNING! - You must use the new nonce in making the next API call */
 /* IMPORTANT WARNING! - All responses are in JSON format. */
 
 
@@ -14,8 +13,7 @@
         'amount' => $amount, ///// amount customer wants to purchase
         'apiKey' => 'enter your API key', ////// your secret API key
         'merchantId' => 'enter your merchant ID', ///// your merchant ID
-        'nonce' =>  'RGp7LJZ=OnY+jy', ////////// new after every transaction, store it on your server
-        'recipientMobile' => $mobilePhone ////////must be a valid MTN number, other networks will be added soon
+        'recipientMobile' => $mobilePhone ////////must be a valid mobile number, all networks are available
       
 );
        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
